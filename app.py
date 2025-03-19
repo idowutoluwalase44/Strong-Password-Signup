@@ -12,23 +12,18 @@ def signup():
 
     password = data["password"]
 
-    # 1. Length check
     if len(password) < 8:
         return jsonify({"error": "Password must be at least 8 characters long"}), 400
 
-    # 2. Uppercase letter check
     if not re.search(r"[A-Z]", password):
         return jsonify({"error": "Password must contain at least one uppercase letter"}), 400
 
-    # 3. Lowercase letter check
     if not re.search(r"[a-z]", password):
         return jsonify({"error": "Password must contain at least one lowercase letter"}), 400
 
-    # 4. Digit check
     if not re.search(r"\d", password):
         return jsonify({"error": "Password must contain at least one digit"}), 400
 
-    # 5. Special character check
     if not re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):
         return jsonify({"error": "Password must contain at least one special character"}), 400
 
