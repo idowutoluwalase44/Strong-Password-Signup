@@ -149,13 +149,6 @@ Below is the core `app.py` code:
 4. **Push** to your branch.  
 5. **Create a Pull Request**.  
 
----
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You’re free to use, modify, and distribute this software, but please include the original license in any copies or substantial portions of the software.
-
----
 
 **Happy coding!**
 
